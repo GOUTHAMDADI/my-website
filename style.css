@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1e8;
+    color: #1d281c;
+}
+
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #f4f1e8;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #70864d;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #1d281c;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #70864d;
+}
+
+.book-button {
+    background: #263824;
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15,30,15,.9),
+            rgba(15,30,15,.35)
+        ),
+        url("images/camping.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.tag {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 9vw, 105px);
+    line-height: .9;
+}
+
+.hero h1 span {
+    color: #c9aa68;
+}
+
+.description {
+    max-width: 600px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin: 30px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary,
+.secondary {
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background: #c9aa68;
+    color: #172016;
+}
+
+.secondary {
+    color: white;
+    border: 1px solid white;
+}
+
+.location {
+    margin-top: 30px;
+}
+
+
+/* SECTIONS */
+
+.gear-section,
+.booking,
+.contact {
+    padding: 100px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title > p {
+    color: #70864d;
+
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+}
+
+.section-title h2 span {
+    color: #70864d;
+}
+
+
+/* GEAR */
+
+.gear-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.07);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e0e6d5;
+
+    border-radius: 12px;
+
+    font-size: 70px;
+
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.card h4 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.card h4 small {
+    font-size: 14px;
+    color: #777;
+}
+
+.card button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #263824;
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.card button:hover {
+    background: #70864d;
+}
+
+
+/* HOW */
+
+.how {
+    padding: 100px 7%;
+
+    background: #263824;
+    color: white;
+}
+
+.how .section-title > p {
+    color: #c9aa68;
+}
+
+.steps {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.steps strong {
+    font-size: 45px;
+    color: #c9aa68;
+}
+
+.steps h3 {
+    margin: 15px 0;
+}
+
+.steps p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+/* BOOKING */
+
+.booking-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.booking-text > p:first-child {
+    color: #70864d;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.booking-text h2 {
+    font-size: 55px;
+
+    margin: 20px 0;
+}
+
+.booking-text h2 span {
+    color: #70864d;
+}
+
+.booking-text p {
+    line-height: 1.7;
+    color: #666;
+}
+
+form {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+form input,
+form select,
+form textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+.dates {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px;
+}
+
+form textarea {
+    min-height: 100px;
+}
+
+form button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #263824;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            rgba(35,55,32,.94),
+            rgba(35,55,32,.94)
+        ),
+        url("images/forest.jpg");
+
+    background-size: cover;
+
+    color: white;
+}
+
+.about > div {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.about p {
+    color: #ddd;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+.contact-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contact-grid div {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.contact-grid h3 {
+    margin: 15px 0 8px;
+}
+
+.contact-grid p {
+    color: #666;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background: #151c14;
+
+    color: white;
+}
+
+footer h2 {
+    letter-spacing: 3px;
+}
+
+footer p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+    .links {
+        display: none;
+    }
+
+    .gear-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width:600px) {
+
+    .gear-container {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .dates {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .booking-text h2 {
+        font-size: 42px;
+    }
+}
