@@ -3,612 +3,412 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>CAMP OUT | Gear Up. Head Out.</title>
+    <title>Game Hub</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-
-<header>
-
-    <nav>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
         <div class="logo">
-            CAMP<span>OUT</span>
+            🎮 <span>GAME</span> HUB
         </div>
 
-        <div class="links">
-
+        <nav>
             <a href="#home">Home</a>
-            <a href="#gear">Gear</a>
+            <a href="#games">Games</a>
             <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        </nav>
 
-        </div>
+        <button id="playNowBtn" class="nav-button">
+            PLAY NOW
+        </button>
 
-        <a href="#booking"
-           class="book-button">
-            Book Now
-        </a>
-
-    </nav>
-
-</header>
+    </header>
 
 
-<!-- HERO -->
+    <!-- HERO -->
+    <section id="home" class="hero">
 
-<section id="home" class="hero">
+        <div class="hero-content">
 
-    <div class="hero-content">
+            <p class="small-title">
+                WELCOME TO
+            </p>
 
-        <p class="tag">
-            CAMPING EQUIPMENT RENTALS
-        </p>
+            <h1>
+                GAME <span>HUB</span>
+            </h1>
 
-        <h1>
-            GEAR UP.<br>
-            <span>HEAD OUT.</span>
-        </h1>
+            <p class="hero-text">
+                Your ultimate place for fun, simple and addictive browser games.
+            </p>
 
-        <p class="description">
+            <div class="hero-buttons">
 
-            Quality camping equipment for
-            unforgettable outdoor adventures.
+                <button id="exploreBtn" class="primary-btn">
+                    🎮 EXPLORE GAMES
+                </button>
 
-            Rent the gear you need and
-            explore the outdoors without
-            buying expensive equipment.
+                <button id="randomBtn" class="secondary-btn">
+                    🎲 RANDOM GAME
+                </button>
 
-        </p>
-
-        <div class="buttons">
-
-            <a href="#gear"
-               class="primary">
-                Explore Gear
-            </a>
-
-            <a href="#booking"
-               class="secondary">
-                Rent Now
-            </a>
-
-        </div>
-
-        <p class="location">
-            📍 Visakhapatnam, Andhra Pradesh
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- GEAR -->
-
-<section id="gear"
-         class="gear-section">
-
-    <div class="section-title">
-
-        <p>OUR GEAR</p>
-
-        <h2>
-            Everything for your
-            <span>adventure</span>
-        </h2>
-
-        <p>
-            Choose the equipment you need
-            for your next outdoor trip.
-        </p>
-
-    </div>
-
-
-    <div class="gear-container">
-
-
-        <!-- TENT -->
-
-        <div class="card">
-
-            <div class="icon">
-                ⛺
             </div>
 
-            <h3>
-                Camping Tent
-            </h3>
-
-            <p>
-                Comfortable and weather-resistant
-                tents for outdoor camping.
-            </p>
-
-            <h4>
-                ₹299
-                <small>/ day</small>
-            </h4>
-
-            <button
-                onclick="selectGear('Camping Tent')">
-
-                Rent This
-
-            </button>
-
         </div>
 
+    </section>
 
-        <!-- SLEEPING BAG -->
 
-        <div class="card">
+    <!-- GAMES -->
+    <section id="games" class="games-section">
 
-            <div class="icon">
-                🛌
-            </div>
+        <div class="section-heading">
 
-            <h3>
-                Sleeping Bag
-            </h3>
-
-            <p>
-                Stay warm and comfortable
-                during your camping nights.
-            </p>
-
-            <h4>
-                ₹149
-                <small>/ day</small>
-            </h4>
-
-            <button
-                onclick="selectGear('Sleeping Bag')">
-
-                Rent This
-
-            </button>
-
-        </div>
-
-
-        <!-- LIGHT -->
-
-        <div class="card">
-
-            <div class="icon">
-                🔦
-            </div>
-
-            <h3>
-                Camping Light
-            </h3>
-
-            <p>
-                Portable lighting for your
-                campsite and night adventures.
-            </p>
-
-            <h4>
-                ₹99
-                <small>/ day</small>
-            </h4>
-
-            <button
-                onclick="selectGear('Camping Light')">
-
-                Rent This
-
-            </button>
-
-        </div>
-
-
-        <!-- STOVE -->
-
-        <div class="card">
-
-            <div class="icon">
-                🔥
-            </div>
-
-            <h3>
-                Camping Stove
-            </h3>
-
-            <p>
-                Compact cooking equipment
-                for outdoor adventures.
-            </p>
-
-            <h4>
-                ₹199
-                <small>/ day</small>
-            </h4>
-
-            <button
-                onclick="selectGear('Camping Stove')">
-
-                Rent This
-
-            </button>
-
-        </div>
-
-
-        <!-- BACKPACK -->
-
-        <div class="card">
-
-            <div class="icon">
-                🎒
-            </div>
-
-            <h3>
-                Trekking Backpack
-            </h3>
-
-            <p>
-                Strong and comfortable backpacks
-                for trekking and camping.
-            </p>
-
-            <h4>
-                ₹149
-                <small>/ day</small>
-            </h4>
-
-            <button
-                onclick="selectGear('Trekking Backpack')">
-
-                Rent This
-
-            </button>
-
-        </div>
-
-
-        <!-- CHAIR -->
-
-        <div class="card">
-
-            <div class="icon">
-                🪑
-            </div>
-
-            <h3>
-                Camping Chair
-            </h3>
-
-            <p>
-                Relax comfortably around
-                your campsite.
-            </p>
-
-            <h4>
-                ₹99
-                <small>/ day</small>
-            </h4>
-
-            <button
-                onclick="selectGear('Camping Chair')">
-
-                Rent This
-
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- HOW IT WORKS -->
-
-<section class="how">
-
-    <div class="section-title">
-
-        <p>HOW IT WORKS</p>
-
-        <h2>
-            Adventure made
-            <span>simple</span>
-        </h2>
-
-    </div>
-
-
-    <div class="steps">
-
-        <div>
-            <strong>01</strong>
-
-            <h3>
-                Choose Gear
-            </h3>
-
-            <p>
-                Select the equipment
-                you need.
-            </p>
-        </div>
-
-
-        <div>
-            <strong>02</strong>
-
-            <h3>
-                Book
-            </h3>
-
-            <p>
-                Select your rental
-                dates.
-            </p>
-        </div>
-
-
-        <div>
-            <strong>03</strong>
-
-            <h3>
-                Collect
-            </h3>
-
-            <p>
-                Pick up your equipment
-                in Visakhapatnam.
-            </p>
-        </div>
-
-
-        <div>
-            <strong>04</strong>
-
-            <h3>
-                Head Out
-            </h3>
-
-            <p>
-                Enjoy your adventure.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- BOOKING -->
-
-<section id="booking"
-         class="booking">
-
-    <div class="booking-container">
-
-
-        <div class="booking-text">
-
-            <p>
-                READY FOR ADVENTURE?
-            </p>
+            <p>CHOOSE YOUR GAME</p>
 
             <h2>
-                Book your
-                <span>gear.</span>
+                🔥 PLAY <span>NOW</span>
             </h2>
-
-            <p>
-                Fill in your details and
-                send your booking request
-                directly to CAMP OUT.
-            </p>
 
         </div>
 
 
-        <form id="bookingForm">
-
+        <!-- SEARCH AND FILTER -->
+        <div class="game-controls">
 
             <input
                 type="text"
-                id="name"
-                placeholder="Your Name"
-                required>
+                id="searchInput"
+                placeholder="🔍 Search games..."
+            >
 
+            <select id="categoryFilter">
 
-            <input
-                type="tel"
-                id="phone"
-                placeholder="Mobile Number"
-                required>
-
-
-            <select
-                id="gearSelect"
-                required>
-
-                <option value="">
-                    Select Equipment
+                <option value="all">
+                    All Games
                 </option>
 
-                <option>
-                    Camping Tent
+                <option value="arcade">
+                    Arcade
                 </option>
 
-                <option>
-                    Sleeping Bag
+                <option value="puzzle">
+                    Puzzle
                 </option>
 
-                <option>
-                    Camping Light
-                </option>
-
-                <option>
-                    Camping Stove
-                </option>
-
-                <option>
-                    Trekking Backpack
-                </option>
-
-                <option>
-                    Camping Chair
+                <option value="casual">
+                    Casual
                 </option>
 
             </select>
 
+        </div>
 
-            <div class="dates">
 
-                <input
-                    type="date"
-                    id="startDate"
-                    required>
+        <!-- GAME CARDS -->
+        <div
+            class="games-grid"
+            id="gamesGrid"
+        >
 
-                <input
-                    type="date"
-                    id="endDate"
-                    required>
+
+            <!-- NEO LIGHTS -->
+
+            <div
+                class="game-card"
+                data-name="Neo Lights"
+                data-category="arcade"
+            >
+
+                <div class="game-icon">
+                    ⚡
+                </div>
+
+                <div class="game-info">
+
+                    <span class="game-category">
+                        ARCADE
+                    </span>
+
+                    <h3>
+                        Neo Lights
+                    </h3>
+
+                    <p>
+                        Test your speed and reflexes.
+                        Click the glowing light before time runs out!
+                    </p>
+
+                    <button
+                        class="play-game"
+                        data-game="neo-lights"
+                    >
+                        PLAY GAME →
+                    </button>
+
+                </div>
 
             </div>
 
 
-            <textarea
-                id="message"
-                placeholder="Message / Requirements">
-            </textarea>
+            <!-- MEMORY FLIP -->
+
+            <div
+                class="game-card"
+                data-name="Memory Flip"
+                data-category="puzzle"
+            >
+
+                <div class="game-icon">
+                    🧠
+                </div>
+
+                <div class="game-info">
+
+                    <span class="game-category">
+                        PUZZLE
+                    </span>
+
+                    <h3>
+                        Memory Flip
+                    </h3>
+
+                    <p>
+                        Flip the cards and find all matching pairs.
+                    </p>
+
+                    <button
+                        class="play-game"
+                        data-game="memory"
+                    >
+                        PLAY GAME →
+                    </button>
+
+                </div>
+
+            </div>
 
 
-            <button type="submit">
-                Book Through WhatsApp
+            <!-- QUICK TAP -->
+
+            <div
+                class="game-card"
+                data-name="Quick Tap"
+                data-category="casual"
+            >
+
+                <div class="game-icon">
+                    👆
+                </div>
+
+                <div class="game-info">
+
+                    <span class="game-category">
+                        CASUAL
+                    </span>
+
+                    <h3>
+                        Quick Tap
+                    </h3>
+
+                    <p>
+                        Tap as fast as possible before the timer ends!
+                    </p>
+
+                    <button
+                        class="play-game"
+                        data-game="quick-tap"
+                    >
+                        PLAY GAME →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <p
+            id="noGames"
+            class="no-games"
+        >
+            😭 No games found.
+        </p>
+
+    </section>
+
+
+    <!-- GAME MODAL -->
+
+    <div
+        id="gameModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-btn"
+            >
+                ✕
             </button>
 
-        </form>
+
+            <!-- GAME INTRO -->
+
+            <div id="gameHome">
+
+                <div id="modalIcon">
+                    ⚡
+                </div>
+
+                <h2 id="modalTitle">
+                    Neo Lights
+                </h2>
+
+                <p id="modalDescription">
+                    Get ready!
+                </p>
+
+                <button
+                    id="startGameBtn"
+                    class="primary-btn"
+                >
+                    START GAME
+                </button>
+
+            </div>
+
+
+            <!-- NEO LIGHTS -->
+
+            <div
+                id="neoLightsGame"
+                class="actual-game"
+            >
+
+                <div class="game-stats">
+
+                    <div>
+                        SCORE
+                        <strong id="neoScore">
+                            0
+                        </strong>
+                    </div>
+
+                    <div>
+                        TIME
+                        <strong id="neoTime">
+                            30
+                        </strong>
+                    </div>
+
+                </div>
+
+                <div id="neoBoard"></div>
+
+                <p id="neoMessage">
+                    Click the glowing light!
+                </p>
+
+            </div>
+
+
+            <!-- MEMORY FLIP -->
+
+            <div
+                id="memoryGame"
+                class="actual-game"
+            >
+
+                <div class="game-stats">
+
+                    <div>
+                        MOVES
+                        <strong id="memoryMoves">
+                            0
+                        </strong>
+                    </div>
+
+                </div>
+
+                <div id="memoryBoard"></div>
+
+            </div>
+
+
+            <!-- QUICK TAP -->
+
+            <div
+                id="tapGame"
+                class="actual-game"
+            >
+
+                <div class="game-stats">
+
+                    <div>
+                        TAPS
+                        <strong id="tapScore">
+                            0
+                        </strong>
+                    </div>
+
+                    <div>
+                        TIME
+                        <strong id="tapTime">
+                            10
+                        </strong>
+                    </div>
+
+                </div>
+
+                <button id="tapButton">
+                    TAP ME!
+                </button>
+
+            </div>
+
+        </div>
 
     </div>
 
-</section>
 
+    <!-- ABOUT -->
 
-<!-- ABOUT -->
-
-<section id="about"
-         class="about">
-
-    <div>
-
-        <p>
-            ABOUT CAMP OUT
-        </p>
+    <section
+        id="about"
+        class="about-section"
+    >
 
         <h2>
-            Adventure doesn't
-            have to be expensive.
+            ABOUT <span>GAME HUB</span>
         </h2>
 
         <p>
-            CAMP OUT provides quality
-            camping equipment on rent
-            in Visakhapatnam.
+            Game Hub is a simple browser gaming platform
+            where you can play fun mini-games directly from your browser.
         </p>
 
-        <p>
-            Whether it's trekking,
-            camping, beach trips or
-            weekend adventures,
-            we provide the gear.
+        <p class="copyright">
+            © 2026 Game Hub • Made with ❤️
         </p>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- CONTACT -->
+    <!-- JAVASCRIPT -->
 
-<section id="contact"
-         class="contact">
-
-    <div class="section-title">
-
-        <p>
-            CONTACT US
-        </p>
-
-        <h2>
-            Let's plan your
-            <span>adventure.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-        <div>
-            📍
-            <h3>Location</h3>
-            <p>
-                Visakhapatnam,
-                Andhra Pradesh
-            </p>
-        </div>
-
-
-        <div>
-            📱
-            <h3>WhatsApp</h3>
-            <p>
-                9381347090
-            </p>
-        </div>
-
-
-        <div>
-            ✉️
-            <h3>Email</h3>
-            <p>
-                saicharanvarma73@gmail.com
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <h2>
-        CAMP OUT
-    </h2>
-
-    <p>
-        GEAR UP. HEAD OUT.
-    </p>
-
-    <p>
-        © 2026 CAMP OUT
-    </p>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
